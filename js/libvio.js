@@ -118,7 +118,7 @@ if (/(www.aliyundrive.com|pan.quark.cn|www.alipan.com)/.test(url)){
 		parse: 0
 	}
 }else{
-	var paurl = request("https://libvio.cc/static/player/" + from + ".js").match(/ src="(.*?)'/)[1];
+	var paurl = request("https://libvio.life/static/player/" + from + ".js").match(/ src="(.*?)'/)[1];
 	if (/https/.test(paurl)) {
 		var purl = paurl + url + "&next=" + next + "&id=" + id + "&nid=" + nid;
 		input = {
